@@ -29,7 +29,7 @@ def execute_cpp(row):
     stdout, stderr = process.communicate()
 
     if stdout.strip() == expected_result.strip():
-        row[3] = "pass"  # Assuming the result should be written in column 4
+        row[3] = "pass" 
     else:
         row[3] = "failed"
         failed_tests_cout += 1
@@ -42,7 +42,6 @@ def execute_cpp(row):
         print(stderr)
 
 
-# Iterate through the rows of the DataFrame and execute C++ code for each row
 for index, row in df.iterrows():
     execute_cpp(row)
 
