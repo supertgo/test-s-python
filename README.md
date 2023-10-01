@@ -34,7 +34,7 @@ executable_name = "main"
 
 Download the sheets and put it on root.
 
-### Run Project
+### Running the Project
 
 Run:
 
@@ -48,7 +48,6 @@ You just need to run `make` once. If you just want to run the tests after build,
 ```shell
 make tests
 ```
-
 
 ### Output
 
