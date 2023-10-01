@@ -14,6 +14,7 @@ failed_tests_cout = 0
 
 
 def execute_cpp(row):
+    global failed_tests_cout
     cpp_executable = relative_tp_path + executable_name
 
     row_values = [str(value) for value in row]
