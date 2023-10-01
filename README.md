@@ -16,7 +16,7 @@ I have cloned this repo outside my tp directory. Here´s an example:
 
 ### Setup
 
-After `git clone`, open Makefile and check if `PYTHON` and `PIP` are correclty for you environment.
+After `git clone`, open `Makefile` and check if `PYTHON` and `PIP` are correclty for you environment.
 
 Open `cpp_to_excel.py` file and check if those variables are correclty:
 
@@ -54,7 +54,7 @@ make tests
 For each failed test, the output will be
 
 ```shell
-Test "0 | 1 & 2 | ( 3 | 4 )" ee000 failed, expect result was X XXXX and your output is Y YYYYY
+Test "0 | 1 & 2 | ( 3 | 4 )" ee000 failed, expect result was X XXXXX and your output is Y YYYYY
 Number of failed tests 1
 
 ```
