@@ -30,9 +30,13 @@ def execute_cpp(row):
     stdout, stderr = process.communicate()
 
     if stdout.strip() == expected_result.strip():
-        row[3] = "pass" 
+        row[3] = "pass"
     else:
         row[3] = "failed"
+        print(
+            'Test "%s" %s failed, expect result was %s and your output is %s'
+            % (expression, expression_values, expected_result, stdout.strip())
+        )
         failed_tests_cout += 1
 
     row[4] = stdout.strip()
