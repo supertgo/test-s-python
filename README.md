@@ -16,7 +16,7 @@ I have cloned this repo outside my tp directory. Here´s an example:
 
 ### Setup
 
-After `git clone`, open `Makefile` and check if `PYTHON` and `PIP` are correclty for you environment.
+After `git clone`, open `Makefile` and check if `PYTHON` and `PIP` are correclty for your environment.
 
 Open `cpp_to_excel.py` file and check if those variables are correclty:
 
@@ -29,7 +29,6 @@ relative_tp_path = "../logic-expressions/bin/"
 
 # Change if is not main
 executable_name = "main"
-
 ```
 
 Download the sheets and put it on root.
