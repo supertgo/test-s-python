@@ -1,6 +1,10 @@
 # test-s-python
 
-To run this project, you must have python installed in your pc.
+To run this project, you must have python and pip installed in your pc.
+
+```shell
+sudo apt install python3-pip
+``` 
 
 ## Steps
 
