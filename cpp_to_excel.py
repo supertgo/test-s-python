@@ -6,7 +6,7 @@ excel_file = "data.xlsx"
 relative_tp_path = "../logic-expressions/bin/"
 
 # Change if is not main
-executable_name = "main"
+executable_name = "tp1.out"
 
 df = pd.read_excel(excel_file)
 
