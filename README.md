@@ -31,8 +31,7 @@ relative_tp_path = "../logic-expressions/bin/"
 # As this repository and my tp folder are sibling,
 # i just have to comeback one folder to hit the parent and then hit the tp folder.
 
-# Change if is not main
-executable_name = "main"
+executable_name = "tp1.out"
 ```
 
 Download the sheets and put it on root.
