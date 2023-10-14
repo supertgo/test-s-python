@@ -14,7 +14,7 @@ I have cloned this repo outside my tp directory. Here´s an example:
 
   - `tp-dir/` This directory represents the tp folder.
       - `bin/`
-         - `main`: Is the executable for tp.
+         - `tp1.out`: Is the executable for tp.
         
   - `this_repo/`
 
