@@ -5,16 +5,16 @@ excel_file = "data.xlsx"
 # Put your path for tp here
 relative_tp_path = "../logic-expressions/bin/"
 
-# Change if is not main
+# Change if is not tp1.out
 executable_name = "tp1.out"
 
 df = pd.read_excel(excel_file)
 
-failed_tests_cout = 0
+failed_tests_count = 0
 
 
 def execute_cpp(row):
-    global failed_tests_cout
+    global failed_tests_count
     cpp_executable = relative_tp_path + executable_name
 
     row_values = [str(value) for value in row]
@@ -37,7 +37,7 @@ def execute_cpp(row):
             'Test "%s" %s failed, expect result was %s and your output is %s'
             % (expression, expression_values, expected_result, stdout.strip())
         )
-        failed_tests_cout += 1
+        failed_tests_count += 1
 
     row[4] = stdout.strip()
 
@@ -50,5 +50,5 @@ def execute_cpp(row):
 for index, row in df.iterrows():
     execute_cpp(row)
 
-print("Number of failed tests", failed_tests_cout)
+print("Number of failed tests", failed_tests_count)
 df.to_excel(excel_file, index=False)
